@@ -8,7 +8,7 @@ object MyClass {
     def luhnAlgorithm(idNumber: String): Boolean = {
         var sum = 0
         var isSecond = false
-        for (i <- 0 to idNumber.length - 1) {
+        for (i <- 0 until idNumber.length) {
           var digit = idNumber.charAt(i).getNumericValue
           if (isSecond) { 
             digit = digit * 2
