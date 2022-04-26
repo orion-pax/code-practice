@@ -2,6 +2,7 @@ object MyClass {
 
     def main(args: Array[String]) {
         val checksum = luhnAlgorithm("79927398713")
+        println(s"$checksum")
     }
     
     def luhnAlgorithm(idNumber: String): Boolean = {
